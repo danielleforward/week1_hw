@@ -65,12 +65,12 @@ var reverseDirection = false; // Keeps track of Y direction
 
 
 while (getColor() !== "red" && reverseDirection == false && remainingDots() > 0) { // Go down if these conditions are true
-  down();
+  	down();
   
-  moveFromRed(); // Navigate from a red square
+  	moveFromRed(); // Navigate from a red square
 
 	while (getColor() !== "red" && reverseDirection == true && remainingDots() > 0) { // Go up if these conditions are true
-  up();
+  	up();
 	}
 
 	moveFromRed(); // Navigate from a red square
